@@ -1,2 +1,0 @@
-[console_scripts]
-bpla_service_cli = bpla_service.main.run:main

@@ -1,2 +1,0 @@
-bpla_service
-frontend
