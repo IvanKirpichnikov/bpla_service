@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Полет</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="./script.js" type="module"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+<div class="bg-white p-8 rounded-lg shadow-md w-96">
+    <h2 class="text-2xl font-bold mb-6 text-center">
+        Полет
+    </h2>
+    <div class="mb-4">
+        <label for="location" class="block text-sm font-medium text-gray-700">
+            Локация
+        </label>
+        <p id="location" class="mt-1 text-gray-600 animate-pulse">
+            Загружается...
+        </p>
+    </div>
+    <div class="mb-4">
+        <label for="uav_model" class="block text-sm font-medium text-gray-700">
+            Модель БПЛА
+        </label>
+        <p id="uav_model" class="mt-1 text-gray-600 animate-pulse">
+            Загружается...
+        </p>
+    </div>
+    <div class="mb-4">
+        <label for="status" class="block text-sm font-medium text-gray-700">
+            Статус
+        </label>
+        <p id="status" class="mt-1 text-gray-600 animate-pulse">
+            Загружается...
+        </p>
+    </div>
+    <div class="mb-4">
+        <label for='start_at' class="block text-sm font-medium text-gray-700">
+            Дата начала
+        </label>
+        <p id="start_at" class="mt-1 text-gray-600 animate-pulse">
+            Загружается...
+        </p>
+    </div>
+    <div class="mb-4">
+        <label for="end_at" class="block text-sm font-medium text-gray-700">
+            Дата окончания
+        </label>
+        <p id="end_at" class="mt-1 text-gray-600 animate-pulse">
+            Загружается...
+        </p>
+    </div>
+    <div class="mb-4">
+        <label for="created_at" class="block text-sm font-medium text-gray-700">
+            Дата и время добавления
+        </label>
+        <p id="created_at" class="mt-1 text-gray-600 animate-pulse">
+            Загружается...
+        </p>
+    </div>
+    <button
+        type="button"
+        id="back"
+        class="w-full mt-1 mt-1 bg-blue-500 text-white py-2 rounded-md hover:bg-gray-600 transition duration-200"
+    >
+        Назад
+    </button>
+</div>
+</body>
+</html>

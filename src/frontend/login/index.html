@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <script src="./script.js" type="module"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+<div class="bg-white p-8 rounded-lg shadow-md w-96">
+    <h2 class="text-2xl font-bold mb-6 text-center">Регистрация</h2>
+    <div>
+        <div class="mb-4">
+            <label for="fio" class="block text-sm font-medium text-gray-700">
+                ФИО
+            </label>
+            <input
+                type="text"
+                id="fio"
+                name="fio"
+                placeholder="Введите ФИО"
+                class="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring focus:ring-blue-200"
+                required
+            >
+        </div>
+        <div class="mb-4">
+            <label for="email" class="block text-sm font-medium text-gray-700">
+                Почта
+            </label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Введите почту"
+                class="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring focus:ring-blue-200"
+                required
+            >
+        </div>
+        <div class="mb-4">
+            <label for="password" class="block text-sm font-medium text-gray-700">
+                Пароль
+            </label>
+            <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Введите пароль"
+                class="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring focus:ring-blue-200"
+                required
+            >
+        </div>
+        <div class="mb-4">
+            <label class="block text-sm font-medium text-gray-700">
+                Пол
+            </label>
+            <div class="flex items-center">
+                <input type="radio" id="male" name="gender" value="male" class="mr-2">
+                <label for="male" class="mr-4">Мужской</label>
+                <input type="radio" id="female" name="gender" value="female" class="mr-2">
+                <label for="female">Женский</label>
+            </div>
+        </div>
+        <div class="mb-4">
+            <label for="year_of_birth" class="block text-sm font-medium text-gray-700">
+                Дата рождения
+            </label>
+            <input
+                type="date"
+                id="year_of_birth"
+                name="year_of_birth"
+                class="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring focus:ring-blue-200"
+                required
+            >
+        </div>
+        <div class="mb-4">
+            <label for="issued_by" class="block text-sm font-medium text-gray-700">
+                Кем выдан паспорт
+            </label>
+            <input
+                type="text"
+                id="issued_by"
+                name="issued_by"
+                placeholder="Введите кем выдан паспорт"
+                class="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring focus:ring-blue-200"
+                required
+            >
+        </div>
+        <div class="mb-4">
+            <label for="issue_date" class="block text-sm font-medium text-gray-700">
+                Дата выдачи паспорта
+            </label>
+            <input
+                type="date"
+                id="issue_date"
+                name="issue_date"
+                class="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring focus:ring-blue-200"
+                required
+            >
+        </div>
+        <div class="mb-4">
+            <label for="subdivision_code" class="block text-sm font-medium text-gray-700">
+                Код подразделения паспорта
+            </label>
+            <input
+                type="text"
+                id="subdivision_code"
+                name="subdivision_code"
+                placeholder="Введите код подразделения"
+                class="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring focus:ring-blue-200"
+                required
+            >
+        </div>
+        <div class="mb-4">
+            <label for="place_of_birth" class="block text-sm font-medium text-gray-700">
+                Место рождения
+            </label>
+            <input
+                type="text"
+                id="place_of_birth"
+                name="place_of_birth"
+                placeholder="Введите место рождения"
+                class="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring focus:ring-blue-200"
+                required
+            >
+        </div>
+        <div class="mb-4">
+            <label for="serial_number" class="block text-sm font-medium text-gray-700">
+                Серия паспорта
+            </label>
+            <input
+                type="text"
+                id="serial_number"
+                name="serial_number"
+                placeholder="Введите серию паспорта"
+                class="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring focus:ring-blue-200"
+                required
+            >
+        </div>
+        <div class="mb-4">
+            <label for="number" class="block text-sm font-medium text-gray-700">
+                Номер паспорта
+            </label>
+            <input
+                type="text"
+                id="number"
+                name="number"
+                placeholder="Введите номер паспорта"
+                class="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring focus:ring-blue-200"
+                required
+            >
+        </div>
+        <div class="mb-4">
+            <label for="snils" class="block text-sm font-medium text-gray-700">
+                СНИЛС
+            </label>
+            <input
+                type="text"
+                id="snils"
+                name="snils"
+                placeholder="Введите СНИЛС"
+                class="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring focus:ring-blue-200"
+                required
+            >
+        </div>
+        <button
+            type="button"
+            id="login"
+            class="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition duration-200"
+        >
+            Зарегистрироваться
+        </button>
+        <button
+            type="button"
+            id="auth"
+            class="w-full bg-gray-500 mt-2 text-white py-2 rounded-md hover:bg-gray-600 transition duration-200"
+        >
+            Авторизоваться
+        </button>
+    </div>
+</div>
+</body>
+</html>

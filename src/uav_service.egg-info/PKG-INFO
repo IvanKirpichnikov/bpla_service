@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: uav_service
+Version: 0.0.1
+Author-email: IvanKripichnikov <mmssvvvv570@gmail.com>
+Requires-Python: ~=3.12
+Requires-Dist: dishka==1.4.2
+Requires-Dist: uvicorn==0.31.1
+Requires-Dist: argon2-cffi==23.1.0
+Requires-Dist: sqlalchemy==2.0.36
+Requires-Dist: fastapi==0.115.5
+Requires-Dist: psycopg[binary]==3.2.3
+Requires-Dist: psycopg-pool==3.2.4
+Provides-Extra: linters
+Requires-Dist: mypy==1.13.0; extra == "linters"
+Requires-Dist: ruff==0.8.0; extra == "linters"
+Provides-Extra: migrations
+Requires-Dist: alembic==1.14.0; extra == "migrations"
+Provides-Extra: dev
+Requires-Dist: uav_service[linters,migrations]; extra == "dev"

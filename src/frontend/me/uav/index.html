@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>БПЛА</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="./script.js" type="module"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+<div class="bg-white p-8 rounded-lg shadow-md w-96">
+    <h2 class="text-2xl font-bold mb-6 text-center">
+        БПЛА
+    </h2>
+    <div class="mb-4">
+        <label for="model" class="block text-sm font-medium text-gray-700">
+            Модель
+        </label>
+        <p id="model" class="mt-1 text-gray-600 animate-pulse">
+            Загружается...
+        </p>
+    </div>
+    <div class="mb-4">
+        <label for="serial_number" class="block text-sm font-medium text-gray-700">
+            Серийный номер
+        </label>
+        <p id="serial_number" class="mt-1 text-gray-600 animate-pulse">
+            Загружается...
+        </p>
+    </div>
+    <div class="mb-4">
+        <label for='noise_characteristics' class="block text-sm font-medium text-gray-700">
+            Шумовые характеристики (Гц)
+        </label>
+        <p id="noise_characteristics" class="mt-1 text-gray-600 animate-pulse">
+            Загружается...
+        </p>
+    </div>
+    <div class="mb-4">
+        <label for="reference_number" class="block text-sm font-medium text-gray-700">
+            Учетный номер
+        </label>
+        <p id="reference_number" class="mt-1 text-gray-600 animate-pulse">
+            Загружается...
+        </p>
+    </div>
+    <div class="mb-4">
+        <label for="created_at" class="block text-sm font-medium text-gray-700">
+            Дата и время добавления
+        </label>
+        <p id="created_at" class="mt-1 text-gray-600 animate-pulse">
+            Загружается...
+        </p>
+    </div>
+    <button
+        type="button"
+        id="back"
+        class="w-full mt-1 mt-1 bg-gray-500 text-white py-2 rounded-md hover:bg-gray-600 transition duration-200"
+    >
+        Назад
+    </button>
+</div>
+</body>
+</html>

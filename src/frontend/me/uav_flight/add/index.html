@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавление полета</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="./script.js" type="module"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+<div class="bg-white p-8 rounded-lg shadow-md w-96">
+    <h2 class="text-2xl font-bold mb-6 text-center">Форма добавления полета</h2>
+    <div>
+        <div class="mb-4">
+            <label for="location" class="block text-sm font-medium text-gray-700">
+                Локация
+            </label>
+            <input
+                type="text"
+                id="location"
+                name="location"
+                placeholder="Введите локацию полета"
+                class="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring focus:ring-blue-200"
+                required
+            >
+        </div>
+        <div class="mb-4">
+            <label for="uav" class="block text-sm font-medium text-gray-700">
+                Выбери БПЛА.
+            </label>
+            <select
+                id="uav"
+                class="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-2 px-4 pr-8 rounded shadow leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
+            ></select>
+            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                <svg class="fill-current h-4 w-4" viewBox="0 0 20 20">
+                    <path d="M7 10l5 5 5-5H7z"/>
+                </svg>
+            </div>
+        </div>
+        <div class="mb-4">
+            <label for="start_at" class="block text-sm font-medium text-gray-700">
+                Время начала полета
+            </label>
+            <input
+                type="datetime-local"
+                id="start_at"
+                name="start_at"
+                class="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring focus:ring-blue-200"
+                required
+            >
+        </div>
+        <div class="mb-4">
+            <label for="end_at" class="block text-sm font-medium text-gray-700">
+                Время окончания полета
+            </label>
+            <input
+                type="datetime-local"
+                id="end_at"
+                name="end_at"
+                class="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring focus:ring-blue-200"
+                required
+            >
+        </div>
+        <button
+            type="button"
+            id="add"
+            class="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition duration-200"
+        >
+            Отправить
+        </button>
+        <button
+            type="button"
+            id="back"
+            class="w-full mt-1 bg-gray-500 text-white py-2 rounded-md hover:bg-gray-600 transition duration-200"
+        >
+            Назад к БПЛА
+        </button>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль аккаунта</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="./script.js" type="module"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+<div class="bg-white p-8 rounded-lg shadow-md w-96">
+    <h2 class="text-2xl font-bold mb-6 text-center">Профиль</h2>
+    <div class="mb-4">
+        <label class="block text-sm font-medium text-gray-700">
+            ФИО
+        </label>
+        <p id="fio" class="mt-1 text-gray-600 animate-pulse">Загружается...</p>
+    </div>
+    <div class="mb-4">
+        <label class="block text-sm font-medium text-gray-700">
+            Почта
+        </label>
+        <p id="email" class="mt-1 text-gray-600 animate-pulse">Загружается...</p>
+    </div>
+    <div class="mb-4">
+        <label class="block text-sm font-medium text-gray-700">
+            Дата и время создания профиля
+        </label>
+        <p id="created_at" class="mt-1 text-gray-600 animate-pulse">Загружается...</p>
+    </div>
+    <div class="mt-4">
+        <button
+            id="uavs"
+            class="bg-blue-500 w-full text-white py-2 rounded-md hover:bg-blue-600 transition duration-200">
+            Мои БПЛА
+        </button>
+        <button
+            id="uav-flights"
+            class="bg-blue-500 w-full text-white py-2 mt-1 rounded-md hover:bg-blue-600 transition duration-200">
+            Мои полеты
+        </button>
+        <button
+            id="logout"
+            class="bg-red-500 w-full mt-1 text-white py-2 rounded-md hover:bg-red-600 transition duration-200"
+        >
+            Выйти из аккаунта
+        </button>
+    </div>
+</div>
+</body>
+</html>
