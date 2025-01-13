@@ -6,10 +6,10 @@ from dishka.integrations.fastapi import DishkaRoute
 from fastapi import APIRouter
 from pydantic import BaseModel
 
-from uav_service.application.uav_flight.interactors.add import AddUavFlight
-from uav_service.application.uav_flight.interactors.read import ReadUavFlight
-from uav_service.application.uav_flight.interactors.read_all import ReadUavFlights
-from uav_service.domain.uav_flight.enums.status_type import UavFlightStatusType
+from bpla_service.application.uav_flight.interactors.add import AddUavFlight
+from bpla_service.application.uav_flight.interactors.read import ReadUavFlight
+from bpla_service.application.uav_flight.interactors.read_all import ReadUavFlights
+from bpla_service.domain.uav_flight.enums.status_type import UavFlightStatusType
 
 
 router = APIRouter(route_class=DishkaRoute)

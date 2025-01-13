@@ -1,8 +1,8 @@
-from uav_service.application.commitable import Commitable
-from uav_service.application.provider import Provider
-from uav_service.application.session.gateway import SessionGateway
-from uav_service.domain.session.entity import Session
-from uav_service.domain.user.entity import User
+from bpla_service.application.commitable import Commitable
+from bpla_service.application.provider import Provider
+from bpla_service.application.session.gateway import SessionGateway
+from bpla_service.domain.session.entity import Session
+from bpla_service.domain.user.entity import User
 
 
 class Logout:

@@ -3,8 +3,8 @@ from typing import AsyncIterable
 from dishka import AnyOf, provide, Provider, Scope
 from sqlalchemy.ext.asyncio import async_sessionmaker, AsyncSession, create_async_engine
 
-from uav_service.application.commitable import Commitable
-from uav_service.config import DatabaseConfig
+from bpla_service.application.commitable import Commitable
+from bpla_service.config import DatabaseConfig
 
 
 class ConnectionProvider(Provider):

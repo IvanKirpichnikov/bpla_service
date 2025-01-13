@@ -3,11 +3,11 @@ from datetime import datetime
 from decimal import Decimal
 from uuid import UUID
 
-from uav_service.application.provider import Provider
-from uav_service.application.session.gateway import SessionGateway
-from uav_service.application.uav.gateway import UavGateway
-from uav_service.application.user.gateway import UserGateway
-from uav_service.domain.session.entity import Session
+from bpla_service.application.provider import Provider
+from bpla_service.application.session.gateway import SessionGateway
+from bpla_service.application.uav.gateway import UavGateway
+from bpla_service.application.user.gateway import UserGateway
+from bpla_service.domain.session.entity import Session
 
 
 @dataclass

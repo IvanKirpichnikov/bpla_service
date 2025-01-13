@@ -2,8 +2,8 @@ from dataclasses import dataclass
 from datetime import datetime
 from uuid import UUID
 
-from uav_service.application.provider import Provider
-from uav_service.domain.user.entity import User
+from bpla_service.application.provider import Provider
+from bpla_service.domain.user.entity import User
 
 
 @dataclass

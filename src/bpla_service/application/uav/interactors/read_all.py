@@ -4,11 +4,11 @@ from decimal import Decimal
 from typing import Iterable
 from uuid import UUID
 
-from uav_service.application.provider import Provider
-from uav_service.application.session.gateway import SessionGateway
-from uav_service.application.uav.gateway import UavsGateway
-from uav_service.application.user.gateway import UserGateway
-from uav_service.domain.user.entity import User
+from bpla_service.application.provider import Provider
+from bpla_service.application.session.gateway import SessionGateway
+from bpla_service.application.uav.gateway import UavsGateway
+from bpla_service.application.user.gateway import UserGateway
+from bpla_service.domain.user.entity import User
 
 
 @dataclass

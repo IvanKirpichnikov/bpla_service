@@ -8,10 +8,10 @@ from fastapi import APIRouter
 from pydantic import BaseModel
 from starlette.responses import RedirectResponse, Response
 
-from uav_service.application.user.interactors.login import LoginUser, PassportDataDs
-from uav_service.config import SessionConfig
-from uav_service.domain.user.enums.gender_type import UserGenderType
-from uav_service.domain.user.errors import UserAlreadyExistsError, UserEmailNotValidError
+from bpla_service.application.user.interactors.login import LoginUser, PassportDataDs
+from bpla_service.config import SessionConfig
+from bpla_service.domain.user.enums.gender_type import UserGenderType
+from bpla_service.domain.user.errors import UserAlreadyExistsError, UserEmailNotValidError
 
 
 router = APIRouter(route_class=DishkaRoute)

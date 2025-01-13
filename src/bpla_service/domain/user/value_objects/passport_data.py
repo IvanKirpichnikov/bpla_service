@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from uav_service.domain.user.enums.gender_type import UserGenderType
+from bpla_service.domain.user.enums.gender_type import UserGenderType
 
 
 class PassportData:

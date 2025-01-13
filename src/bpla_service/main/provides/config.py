@@ -1,6 +1,6 @@
 from dishka import provide, Provider, Scope
 
-from uav_service.config import Config, CryptographerConfig, DatabaseConfig, SessionConfig
+from bpla_service.config import Config, CryptographerConfig, DatabaseConfig, SessionConfig
 
 
 class ConfigProvider(Provider):

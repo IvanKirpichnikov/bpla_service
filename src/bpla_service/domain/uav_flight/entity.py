@@ -2,8 +2,8 @@ from datetime import datetime, UTC
 from typing import Self
 from uuid import UUID, uuid4
 
-from uav_service.domain.uav_flight.enums.status_type import UavFlightStatusType
-from uav_service.domain.uav_flight.value_objects.time_data import UavFlightTimeData
+from bpla_service.domain.uav_flight.enums.status_type import UavFlightStatusType
+from bpla_service.domain.uav_flight.value_objects.time_data import UavFlightTimeData
 
 
 class UavFlight:

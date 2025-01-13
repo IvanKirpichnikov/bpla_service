@@ -3,3 +3,4 @@ config.toml
 .idea
 __pycache__
 docker-compose.yml
+*.egg-info

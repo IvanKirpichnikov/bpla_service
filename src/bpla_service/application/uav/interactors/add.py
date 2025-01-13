@@ -1,10 +1,10 @@
 from decimal import Decimal
 
-from uav_service.application.commitable import Commitable
-from uav_service.application.provider import Provider
-from uav_service.application.uav.gateway import UavGateway
-from uav_service.domain.uav.entity import Uav
-from uav_service.domain.user.entity import User
+from bpla_service.application.commitable import Commitable
+from bpla_service.application.provider import Provider
+from bpla_service.application.uav.gateway import UavGateway
+from bpla_service.domain.uav.entity import Uav
+from bpla_service.domain.user.entity import User
 
 
 class AddUav:

@@ -1,11 +1,11 @@
 from datetime import datetime
 from uuid import UUID
 
-from uav_service.application.commitable import Commitable
-from uav_service.application.provider import Provider
-from uav_service.application.uav_flight.gateway import UavFlightGateway
-from uav_service.domain.uav_flight.entity import UavFlight
-from uav_service.domain.user.entity import User
+from bpla_service.application.commitable import Commitable
+from bpla_service.application.provider import Provider
+from bpla_service.application.uav_flight.gateway import UavFlightGateway
+from bpla_service.domain.uav_flight.entity import UavFlight
+from bpla_service.domain.user.entity import User
 
 
 class AddUavFlight:

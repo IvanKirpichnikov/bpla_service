@@ -1,7 +1,7 @@
 from sqlalchemy import Boolean, Column, DateTime, Enum, ForeignKey, MetaData, Numeric, String, Table, UUID
 
-from uav_service.domain.uav_flight.enums.status_type import UavFlightStatusType
-from uav_service.domain.user.enums.gender_type import UserGenderType
+from bpla_service.domain.uav_flight.enums.status_type import UavFlightStatusType
+from bpla_service.domain.user.enums.gender_type import UserGenderType
 
 
 metadata = MetaData()

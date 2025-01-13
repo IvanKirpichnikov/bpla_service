@@ -3,9 +3,9 @@ from __future__ import annotations
 from datetime import datetime, UTC
 from uuid import UUID, uuid4
 
-from uav_service.domain.user.errors import UserDeletedError, UserPasswordNotValidError
-from uav_service.domain.user.value_objects.passport_data import PassportData
-from uav_service.domain.user.value_objects.time_data import UserTimeData
+from bpla_service.domain.user.errors import UserDeletedError, UserPasswordNotValidError
+from bpla_service.domain.user.value_objects.passport_data import PassportData
+from bpla_service.domain.user.value_objects.time_data import UserTimeData
 
 
 class User:

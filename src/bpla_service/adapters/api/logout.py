@@ -4,8 +4,8 @@ from fastapi import APIRouter
 from starlette.requests import Request
 from starlette.responses import Response
 
-from uav_service.application.user.interactors.logout import Logout
-from uav_service.config import SessionConfig
+from bpla_service.application.user.interactors.logout import Logout
+from bpla_service.config import SessionConfig
 
 
 router = APIRouter(route_class=DishkaRoute)

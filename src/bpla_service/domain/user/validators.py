@@ -1,6 +1,6 @@
 import re
 
-from uav_service.domain.user.errors import UserEmailNotValidError
+from bpla_service.domain.user.errors import UserEmailNotValidError
 
 
 _email_re_pattern = re.compile("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$")

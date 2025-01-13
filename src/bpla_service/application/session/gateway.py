@@ -2,7 +2,7 @@ from abc import abstractmethod
 from typing import Protocol
 from uuid import UUID
 
-from uav_service.domain.session.entity import Session
+from bpla_service.domain.session.entity import Session
 
 
 class SessionGateway(Protocol):

@@ -2,7 +2,7 @@ from abc import abstractmethod
 from typing import Protocol
 from uuid import UUID
 
-from uav_service.domain.user.entity import User
+from bpla_service.domain.user.entity import User
 
 
 class UserGateway(Protocol):

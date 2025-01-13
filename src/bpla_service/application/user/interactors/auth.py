@@ -1,11 +1,11 @@
-from uav_service.application.commitable import Commitable
-from uav_service.application.session.cryptographer import SessionCryptographer
-from uav_service.application.session.gateway import SessionGateway
-from uav_service.application.user.gateway import UserGateway
-from uav_service.application.user.password_hasher import PasswordHasher
-from uav_service.config import SessionConfig
-from uav_service.domain.session.entity import Session
-from uav_service.domain.user.validators import user_email_validator
+from bpla_service.application.commitable import Commitable
+from bpla_service.application.session.cryptographer import SessionCryptographer
+from bpla_service.application.session.gateway import SessionGateway
+from bpla_service.application.user.gateway import UserGateway
+from bpla_service.application.user.password_hasher import PasswordHasher
+from bpla_service.config import SessionConfig
+from bpla_service.domain.session.entity import Session
+from bpla_service.domain.user.validators import user_email_validator
 
 
 class AuthUser:

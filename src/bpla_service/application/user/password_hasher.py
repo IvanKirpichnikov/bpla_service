@@ -1,7 +1,7 @@
 import argon2
 from argon2.exceptions import Argon2Error
 
-from uav_service.domain.user.errors import UserPasswordNotValidError
+from bpla_service.domain.user.errors import UserPasswordNotValidError
 
 
 class PasswordHasher:

@@ -2,10 +2,10 @@ from dataclasses import dataclass
 from datetime import datetime
 from uuid import UUID
 
-from uav_service.application.provider import Provider
-from uav_service.application.uav_flight.gateway import UavFlightGateway
-from uav_service.domain.uav_flight.enums.status_type import UavFlightStatusType
-from uav_service.domain.user.entity import User
+from bpla_service.application.provider import Provider
+from bpla_service.application.uav_flight.gateway import UavFlightGateway
+from bpla_service.domain.uav_flight.enums.status_type import UavFlightStatusType
+from bpla_service.domain.user.entity import User
 
 
 @dataclass

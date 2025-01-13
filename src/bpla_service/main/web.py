@@ -8,8 +8,8 @@ from fastapi import FastAPI
 from starlette.middleware.cors import CORSMiddleware
 from starlette.staticfiles import StaticFiles
 
-from uav_service.adapters.api import auth, login, logout, me, uav, uav_flight
-from uav_service.config import Config
+from bpla_service.adapters.api import auth, login, logout, me, uav, uav_flight
+from bpla_service.config import Config
 
 
 @asynccontextmanager

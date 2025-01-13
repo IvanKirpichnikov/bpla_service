@@ -4,11 +4,11 @@ from uuid import UUID
 from sqlalchemy import insert, RowMapping, select, update
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from uav_service.adapters.data_mappers.tables import sessions
-from uav_service.adapters.identity_map import IdentityMap
-from uav_service.application.session.gateway import SessionGateway
-from uav_service.domain.session.entity import Session
-from uav_service.domain.session.value_objects import SessionTimeData
+from bpla_service.adapters.data_mappers.tables import sessions
+from bpla_service.adapters.identity_map import IdentityMap
+from bpla_service.application.session.gateway import SessionGateway
+from bpla_service.domain.session.entity import Session
+from bpla_service.domain.session.value_objects import SessionTimeData
 
 
 def _load_entity(data: RowMapping) -> Session:

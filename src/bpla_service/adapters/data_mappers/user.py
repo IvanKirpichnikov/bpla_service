@@ -4,14 +4,14 @@ from uuid import UUID
 from sqlalchemy import insert, RowMapping, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from uav_service.adapters.data_mappers.tables import users
-from uav_service.adapters.identity_map import IdentityMap
-from uav_service.application.user.gateway import UserGateway
-from uav_service.domain.user.entity import User
-from uav_service.domain.user.enums.gender_type import UserGenderType
-from uav_service.domain.user.errors import UserNotFoundError
-from uav_service.domain.user.value_objects.passport_data import PassportData
-from uav_service.domain.user.value_objects.time_data import UserTimeData
+from bpla_service.adapters.data_mappers.tables import users
+from bpla_service.adapters.identity_map import IdentityMap
+from bpla_service.application.user.gateway import UserGateway
+from bpla_service.domain.user.entity import User
+from bpla_service.domain.user.enums.gender_type import UserGenderType
+from bpla_service.domain.user.errors import UserNotFoundError
+from bpla_service.domain.user.value_objects.passport_data import PassportData
+from bpla_service.domain.user.value_objects.time_data import UserTimeData
 
 
 def _load_entity(data: RowMapping) -> User:

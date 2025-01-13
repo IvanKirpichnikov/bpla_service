@@ -7,9 +7,9 @@ from fastapi import APIRouter
 from pydantic import BaseModel
 from starlette.responses import Response
 
-from uav_service.application.user.interactors.auth import AuthUser
-from uav_service.config import SessionConfig
-from uav_service.domain.user.errors import (
+from bpla_service.application.user.interactors.auth import AuthUser
+from bpla_service.config import SessionConfig
+from bpla_service.domain.user.errors import (
     UserDeletedError,
     UserEmailNotValidError,
     UserNotFoundError,

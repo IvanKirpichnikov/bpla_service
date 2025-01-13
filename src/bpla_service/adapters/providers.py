@@ -2,14 +2,14 @@ from typing import override
 
 from starlette.requests import Request
 
-from uav_service.application.provider import Provider
-from uav_service.application.session.cryptographer import SessionCryptographer
-from uav_service.application.session.gateway import SessionGateway
-from uav_service.application.user.gateway import UserGateway
-from uav_service.config import SessionConfig
-from uav_service.domain.session.entity import Session
-from uav_service.domain.session.errors import UnauthorizedError
-from uav_service.domain.user.entity import User
+from bpla_service.application.provider import Provider
+from bpla_service.application.session.cryptographer import SessionCryptographer
+from bpla_service.application.session.gateway import SessionGateway
+from bpla_service.application.user.gateway import UserGateway
+from bpla_service.config import SessionConfig
+from bpla_service.domain.session.entity import Session
+from bpla_service.domain.session.errors import UnauthorizedError
+from bpla_service.domain.user.entity import User
 
 
 class UserProvider(Provider[User]):

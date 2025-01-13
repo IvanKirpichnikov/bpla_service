@@ -10,7 +10,7 @@ from typing import Sequence, Union
 import sqlalchemy as sa
 from alembic import op
 
-from uav_service.domain.uav_flight.enums.status_type import UavFlightStatusType
+from bpla_service.domain.uav_flight.enums.status_type import UavFlightStatusType
 
 
 # revision identifiers, used by Alembic.

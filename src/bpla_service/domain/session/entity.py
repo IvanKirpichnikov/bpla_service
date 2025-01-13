@@ -3,8 +3,8 @@ from __future__ import annotations
 from datetime import datetime, timedelta, UTC
 from uuid import UUID, uuid4
 
-from uav_service.domain.session.errors import SessionIsExpiredError
-from uav_service.domain.session.value_objects import SessionTimeData
+from bpla_service.domain.session.errors import SessionIsExpiredError
+from bpla_service.domain.session.value_objects import SessionTimeData
 
 
 class Session:

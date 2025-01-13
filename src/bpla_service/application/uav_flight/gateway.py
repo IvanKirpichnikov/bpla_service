@@ -2,7 +2,7 @@ from abc import abstractmethod
 from typing import Protocol
 from uuid import UUID
 
-from uav_service.domain.uav_flight.entity import UavFlight
+from bpla_service.domain.uav_flight.entity import UavFlight
 
 
 class UavFlightGateway(Protocol):

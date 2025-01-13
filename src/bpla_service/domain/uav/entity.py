@@ -4,9 +4,9 @@ from datetime import datetime, UTC
 from decimal import Decimal
 from uuid import UUID, uuid4
 
-from uav_service.domain.uav.value_objects.characteristics import UavCharacteristics
-from uav_service.domain.uav.value_objects.time_data import UavTimeData
-from uav_service.domain.uav.value_objects.uav_data import UavData
+from bpla_service.domain.uav.value_objects.characteristics import UavCharacteristics
+from bpla_service.domain.uav.value_objects.time_data import UavTimeData
+from bpla_service.domain.uav.value_objects.uav_data import UavData
 
 
 class Uav:

@@ -8,9 +8,9 @@ from fastapi import APIRouter
 from pydantic import BaseModel
 from starlette.responses import Response
 
-from uav_service.application.uav.interactors.add import AddUav
-from uav_service.application.uav.interactors.read import ReadUav
-from uav_service.application.uav.interactors.read_all import ReadAllUavs
+from bpla_service.application.uav.interactors.add import AddUav
+from bpla_service.application.uav.interactors.read import ReadUav
+from bpla_service.application.uav.interactors.read_all import ReadAllUavs
 
 
 router = APIRouter(route_class=DishkaRoute)

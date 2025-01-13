@@ -7,8 +7,8 @@ from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 from starlette.requests import Request
 
-from uav_service.application.user.interactors.get_me import GetMe
-from uav_service.domain.session.errors import SessionIsExpiredError
+from bpla_service.application.user.interactors.get_me import GetMe
+from bpla_service.domain.session.errors import SessionIsExpiredError
 
 
 router = APIRouter(route_class=DishkaRoute)

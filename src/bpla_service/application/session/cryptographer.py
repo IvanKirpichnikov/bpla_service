@@ -2,7 +2,7 @@ from uuid import UUID
 
 from cryptography.fernet import Fernet
 
-from uav_service.domain.session.entity import Session
+from bpla_service.domain.session.entity import Session
 
 
 class SessionCryptographer:

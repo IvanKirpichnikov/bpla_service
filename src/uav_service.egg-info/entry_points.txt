@@ -1,2 +1,0 @@
-[console_scripts]
-uav_service_cli = uav_service.main.run:main

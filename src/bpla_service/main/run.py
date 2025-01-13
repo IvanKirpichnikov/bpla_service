@@ -4,9 +4,9 @@ import sys
 from pathlib import Path
 from typing import cast, Protocol
 
-from uav_service.config import build_config
-from uav_service.main.build_container import build_container
-from uav_service.main.web import run_web
+from bpla_service.config import build_config
+from bpla_service.main.build_container import build_container
+from bpla_service.main.web import run_web
 
 
 class Args(Protocol):
