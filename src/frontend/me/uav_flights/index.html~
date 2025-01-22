@@ -24,7 +24,7 @@
                 </thead>
                 <tbody id="tbody"></tbody>
             </table>
-        </div>
+        </div> <!-- Конец контейнера -->
         <div class="flex justify-left mt-6">
             <button
                 id="add-uav-flight"

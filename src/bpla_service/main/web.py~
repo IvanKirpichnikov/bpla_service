@@ -22,15 +22,15 @@ def run_web(
     config: Config,
     container: AsyncContainer,
 ) -> None:
-    fastapi_app = FastAPI(lifespan=lifespan)
-    
-    fastapi_app.add_middleware(
-        CORSMiddleware,
-        allow_origins=["*"],
-        allow_credentials=True,
-        allow_methods=["*"],
-        allow_headers=["*"],
-    )
+        fastapi_app = FastAPI(lifespan=lifespan)
+        
+        fastapi_app.add_middleware(
+            CORSMiddleware,
+            allow_origins=["*"],
+            allow_credentials=True,
+            allow_methods=["*"],
+            allow_headers=["*"],
+        )
     
     fastapi_app.include_router(auth.router)
     fastapi_app.include_router(login.router)

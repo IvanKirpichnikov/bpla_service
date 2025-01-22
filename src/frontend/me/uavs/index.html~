@@ -10,20 +10,18 @@
 <body class="bg-gray-100 flex items-center justify-center min-h-screen">
     <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-6xl">
         <h2 class="text-2xl font-bold mb-6 text-center">Мои БПЛА</h2>
-        <div class="overflow-x-auto">
-            <table class="min-w-full bg-white border border-gray-300">
-                <thead>
-                    <tr class="bg-gray-200">
-                        <th class="py-2 px-4 border-b text-left">Модель БПЛА</th>
-                        <th class="py-2 px-4 border-b text-left">Серийный номер</th>
-                        <th class="py-2 px-4 border-b text-left">Шумовые характеристики (Гц)</th>
-                        <th class="py-2 px-4 border-b text-left">Учетный номер</th>
-                        <th id="th-created_at" class="py-2 px-4 border-b text-left">Дата добавления</th>
-                    </tr>
-                </thead>
-                <tbody id="tbody"></tbody>
-            </table>
-        </div>
+        <table class="min-w-full bg-white border border-gray-300">
+            <thead>
+                <tr class="bg-gray-200">
+                    <th class="py-2 px-4 border-b text-left">Модель БПЛА</th>
+                    <th class="py-2 px-4 border-b text-left">Серийный номер</th>
+                    <th class="py-2 px-4 border-b text-left">Шумовые характеристики (Гц)</th>
+                    <th class="py-2 px-4 border-b text-left">Учетный номер</th>
+                    <th id="th-created_at" class="py-2 px-4 border-b text-left">Дата добавления</th>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
         <div class="flex justify-left mt-6">
             <button
                 id="add-uav"
