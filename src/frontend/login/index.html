@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="./script.js"></script>
+</head>
+<body class="bg-gray-50">
+    <header class="bg-blue-600 text-white shadow-md">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-xl font-bold">АИС "Кирпичное воздушное пространство"</h1>
+                <nav>
+                    <a href="/" class="text-white hover:text-blue-200">На главную</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="container mx-auto px-4 py-8">
+        <div class="max-w-2xl mx-auto bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="bg-blue-600 px-6 py-4">
+                <h2 class="text-xl font-semibold text-white">Регистрация</h2>
+            </div>
+            <div class="p-6 grid md:grid-cols-2 gap-6">
+                <div class="space-y-4">
+                    <div>
+                        <label for="fio" class="block text-sm font-medium text-gray-700 mb-1">ФИО</label>
+                        <input 
+                            type="text" 
+                            id="fio" 
+                            name="fio" 
+                            required
+                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                            placeholder="Иванов Иван Иванович">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Электронная почта</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            required
+                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                            placeholder="example@mail.ru">
+                    </div>
+                    <div>
+                        <label for="password" class="block text-sm font-medium text-gray-700 mb-1">Пароль</label>
+                        <input 
+                            type="password" 
+                            id="password" 
+                            name="password" 
+                            required
+                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                            placeholder="123456">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Пол</label>
+                        <div class="flex space-x-4">
+                            <label class="inline-flex items-center">
+                                <input type="radio" id="male" name="gender" value="male" class="text-blue-600 focus:ring-blue-500">
+                                <span class="ml-2">Мужской</span>
+                            </label>
+                            <label class="inline-flex items-center">
+                                <input type="radio" id="female" name="gender" value="female" class="text-blue-600 focus:ring-blue-500">
+                                <span class="ml-2">Женский</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="year_of_birth" class="block text-sm font-medium text-gray-700 mb-1">Дата рождения</label>
+                        <input 
+                            type="date" 
+                            id="year_of_birth" 
+                            name="year_of_birth" 
+                            required
+                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    <div>
+                        <label for="place_of_birth" class="block text-sm font-medium text-gray-700 mb-1">Место рождения</label>
+                        <input 
+                            type="text" 
+                            id="place_of_birth" 
+                            name="place_of_birth" 
+                            required
+                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                            placeholder="Город, страна, улица, дом">
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <div>
+                        <label for="serial_number" class="block text-sm font-medium text-gray-700 mb-1">Серия паспорта</label>
+                        <input 
+                            type="text" 
+                            id="serial_number" 
+                            name="serial_number" 
+                            required
+                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                            placeholder="0000">
+                    </div>
+                    
+                    <div>
+                        <label for="number" class="block text-sm font-medium text-gray-700 mb-1">Номер паспорта</label>
+                        <input 
+                            type="text" 
+                            id="number" 
+                            name="number" 
+                            required
+                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                            placeholder="000000">
+                    </div>
+                    
+                    <div>
+                        <label for="issued_by" class="block text-sm font-medium text-gray-700 mb-1">Кем выдан</label>
+                        <input 
+                            type="text" 
+                            id="issued_by" 
+                            name="issued_by" 
+                            required
+                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                            placeholder="Паспортный отдел №...">
+                    </div>
+                    <div>
+                        <label for="issue_date" class="block text-sm font-medium text-gray-700 mb-1">Дата выдачи</label>
+                        <input 
+                            type="date" 
+                            id="issue_date" 
+                            name="issue_date" 
+                            required
+                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    <div>
+                        <label for="subdivision_code" class="block text-sm font-medium text-gray-700 mb-1">Код подразделения</label>
+                        <input 
+                            type="text" 
+                            id="subdivision_code" 
+                            name="subdivision_code" 
+                            required
+                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                            placeholder="000-000">
+                    </div>
+                    <div>
+                        <label for="snils" class="block text-sm font-medium text-gray-700 mb-1">СНИЛС</label>
+                        <input 
+                            type="text" 
+                            id="snils" 
+                            name="snils" 
+                            required
+                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                            placeholder="000-000-000 00">
+                    </div>
+                </div>
+                <div class="md:col-span-2 space-y-3">
+                    <button
+                        type="button"
+                        id="login"
+                        class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition">
+                        Зарегистрироваться
+                    </button>
+                    <div class="text-center">
+                        <a class="text-sm">Уже есть аккаунт?</a>
+                        <a 
+                            href="/auth" 
+                            id="login"
+                            class="text-sm text-blue-600 hover:text-blue-500">
+                            Войти
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

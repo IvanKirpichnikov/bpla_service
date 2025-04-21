@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Система подачи заявок на использование воздушного пространства</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+    <header class="bg-blue-600 text-white shadow-md">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex justify-between items-center">
+                <h1 class="text-2xl font-bold">АИС "Кирпчиное воздушное пространство"</h1>
+                <div class="space-x-4">
+                    <a href="/auth" class="bg-white text-blue-600 px-4 py-2 rounded-md font-medium hover:bg-blue-50 transition">Вход</a>
+                    <a href="/login" class="bg-blue-700 text-white px-4 py-2 rounded-md font-medium hover:bg-blue-800 transition">Регистрация</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container mx-auto px-4 py-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Подача заявок на использование воздушного пространства</h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">Автоматизированная информационная система для оформления и управления заявками на использование воздушного пространства</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 mb-12">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <div class="text-blue-600 mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Подача заявки</h3>
+                <p class="text-gray-600">Быстрое оформление заявки на использование воздушного пространства</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <div class="text-blue-600 mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Статус заявки</h3>
+                <p class="text-gray-600">Отслеживание статуса поданных заявок в реальном времени</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <div class="text-blue-600 mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Личный кабинет</h3>
+                <p class="text-gray-600">Управление профилем и история всех заявок</p>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <a href="/me" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-md font-medium hover:bg-blue-700 transition">Перейти в личный кабинет</a>
+        </div>
+    </main>
+</body>
+</html>

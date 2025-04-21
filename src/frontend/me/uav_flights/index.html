@@ -1,0 +1,90 @@
+<!-- <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои полеты</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="./script.js" type="module"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-6xl">
+        <h2 class="text-2xl font-bold mb-6 text-center">Мои полеты</h2>
+        <div class="overflow-x-auto">
+            <table class="min-w-full bg-white border border-gray-300">
+                <thead>
+                    <tr class="bg-gray-200">
+                        <th class="py-2 px-4 border-b text-left">Локация</th>
+                        <th class="py-2 px-4 border-b text-left">БПЛА</th>
+                        <th class="py-2 px-4 border-b text-left">Статус</th>
+                        <th class="py-2 px-4 border-b text-left">Дата начала</th>
+                        <th class="py-2 px-4 border-b text-left">Дата окончания</th>
+                        <th class="py-2 px-4 border-b text-left">Дата добавления</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+        </div>
+        <div class="flex justify-left mt-6">
+            <button
+                id="add-uav-flight"
+                class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition duration-200"
+            >
+                Добавить полет
+            </button>
+            <button
+                id="back"
+                class="bg-gray-500 ml-3 text-white py-2 px-4 rounded-md hover:bg-gray-600 transition duration-200"
+            >
+                Назад
+            </button>
+        </div>
+    </div>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои заявки</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./script.js" type="module"></script>
+</head>
+<body class="bg-gray-50">
+    <header class="bg-blue-600 text-white shadow-md">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-xl font-bold">АИС "Кирпичное воздушное пространство"</h1>
+                <nav>
+                    <a href="/me" class="text-white hover:text-blue-200">Профиль</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="container mx-auto px-4 py-8">
+        <div class="flex justify-between items-center mb-6">
+            <h2 class="text-2xl font-bold text-gray-800">Мои заявки</h2>
+            <button
+                onclick="window.location.href = '/me/uav_flight/add'"
+                id="add-uav-flight"
+                class="bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition"
+            >
+                Новая заявка
+            </button>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="flights-container">
+        </div>
+        <div class="mt-6 md:hidden">
+            <button
+                id="back"
+                class="w-full bg-gray-500 text-white py-2 px-4 rounded-md hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 transition"
+            >
+                Назад
+            </button>
+        </div>
+    </main>
+</body>
+</html>

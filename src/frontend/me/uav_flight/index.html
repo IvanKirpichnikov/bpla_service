@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заявка на полет</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./script.js" type="module"></script>
+</head>
+<body class="bg-gray-50">
+    <header class="bg-blue-600 text-white shadow-md">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-xl font-bold">АИС "Кирпичное воздушное пространство"</h1>
+                <nav>
+                    <a href="/me/uav_flights" class="text-white hover:text-blue-200">Мои заявки</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="container mx-auto px-4 py-8">
+        <div class="max-w-2xl mx-auto bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
+            <div class="bg-blue-50 px-6 py-4 border-b border-gray-200">
+                <h2 class="text-xl font-semibold text-gray-800 animate-pulse">Загрузка данных заявки...</h2>
+            </div>
+            <div class="p-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <p class="text-sm text-gray-500">Локация полета</p>
+                    <p id="location" class="font-medium animate-pulse">Загружается...</p>
+                </div>
+                <div>
+                    <p class="text-sm text-gray-500">Модель БПЛА</p>
+                    <p id="uav_model" class="font-medium animate-pulse">Загружается...</p>
+                </div>
+                <div>
+                    <p class="text-sm text-gray-500">Статус заявки</p>
+                    <p id="status" class="font-medium animate-pulse">Загружается...</p>
+                </div>
+                <div>
+                    <p class="text-sm text-gray-500">Дата и время начала</p>
+                    <p id="start_at" class="font-medium animate-pulse">Загружается...</p>
+                </div>
+                <div>
+                    <p class="text-sm text-gray-500">Дата и время окончания</p>
+                    <p id="end_at" class="font-medium animate-pulse">Загружается...</p>
+                </div>
+                <div>
+                    <p class="text-sm text-gray-500">Дата создания заявки</p>
+                    <p id="created_at" class="font-medium animate-pulse">Загружается...</p>
+                </div>
+            </div>
+            <div class="px-6 py-4 bg-gray-50 border-t border-gray-200 flex justify-end">
+                <button
+                    id="back"
+                    class="bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition"
+                >
+                    Назад к заявкам
+                </button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

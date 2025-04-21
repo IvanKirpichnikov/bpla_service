@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои БПЛА</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./script.js" type="module"></script>
+</head>
+<body class="bg-gray-50">
+    <header class="bg-blue-600 text-white shadow-md">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-xl font-bold">АИС "Кирпичное воздушное пространство"</h1>
+                <nav>
+                    <a href="/me" class="text-white hover:text-blue-200">Профиль</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="container mx-auto px-4 py-8">
+        <div class="flex justify-between items-center mb-6">
+            <h2 class="text-2xl font-bold text-gray-800">Мои БПЛА</h2>
+            <button
+                id="add-uav"
+                class="bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition"
+            >
+                Добавить БПЛА
+            </button>
+        </div>
+        <div id="uavs" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        </div>
+        <div class="mt-6 md:hidden">
+            <a
+                href="/me"
+                class="w-full bg-gray-500 text-white py-2 px-4 rounded-md hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 transition"
+            >
+                Назад к профилю
+            </a>
+        </div>
+    </main>
+</body>
+</html>
+

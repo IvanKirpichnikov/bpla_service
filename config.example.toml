@@ -1,0 +1,9 @@
+[session]
+seconds_expires_in = 86400
+cookie_key = "UAVSESSIONKEY"
+
+[database]
+url = "postgresql+psycopg://postgres:postgres@postgresql:5432/postgres"
+
+[cryptographer]
+session_key = ""

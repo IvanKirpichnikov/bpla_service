@@ -1,0 +1,34 @@
+[project]
+name = "uav_service"
+version = "0.0.1"
+requires-python = "~=3.12"
+description = ""
+authors = [
+    { name = "IvanKripichnikov", email = "mmssvvvv570@gmail.com" },
+]
+dependencies = [
+    "dishka==1.4.2",
+    "uvicorn==0.31.1",
+    "argon2-cffi==23.1.0",
+    "sqlalchemy==2.0.36",
+    "fastapi==0.115.5",
+    "psycopg[binary]==3.2.3",
+    "psycopg-pool==3.2.4",
+    "cryptography==43.0.3",
+    "alembic==1.14.0",
+]
+
+[project.optional-dependencies]
+linters = [
+    "mypy==1.13.0",
+    "ruff==0.8.0",
+]
+migrations = [
+    "alembic==1.14.0",
+]
+dev = [
+    "uav_service[migrations, linters]",
+]
+
+[project.scripts]
+bpla_service_cli = "bpla_service.main.run:main"
