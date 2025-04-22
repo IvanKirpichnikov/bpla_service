@@ -29,7 +29,7 @@ function setUav(uav) {
 
     let name_h3 = document.createElement('h3');
     name_h3.className = "font-semibold text-lg text-gray-800";
-    name_h3.innerHTML = uav.model;
+    name_h3.textContent = uav.model;
 
     name_div.appendChild(name_h3);
     main_div.appendChild(name_div);
@@ -42,11 +42,11 @@ function setUav(uav) {
 
     let serial_number_title_p = document.createElement('p');
     serial_number_title_p.className = "text-sm text-gray-500";
-    serial_number_title_p.innerHTML = "Серийный номер";
+    serial_number_title_p.textContent = "Серийный номер";
 
     let serial_number_value_p = document.createElement('p');
     serial_number_value_p.className = "font-medium";
-    serial_number_value_p.innerHTML = uav.serial_number;
+    serial_number_value_p.textContent = uav.serial_number;
 
     serial_number_div.appendChild(serial_number_title_p);
     serial_number_div.appendChild(serial_number_value_p);
@@ -57,11 +57,11 @@ function setUav(uav) {
 
     let noise_characteristics_title_p = document.createElement('p');
     noise_characteristics_title_p.className = "text-sm text-gray-500";
-    noise_characteristics_title_p.innerHTML = "Шумовые характеристики";
+    noise_characteristics_title_p.textContent = "Шумовые характеристики";
 
     let noise_characteristics_value_p = document.createElement('p');
     noise_characteristics_value_p.className = "font-medium";
-    noise_characteristics_value_p.innerHTML = uav.noise_characteristics + " Гц.";
+    noise_characteristics_value_p.textContent = uav.noise_characteristics + " Гц.";
 
     noise_characteristics_div.appendChild(noise_characteristics_title_p);
     noise_characteristics_div.appendChild(noise_characteristics_value_p);
@@ -72,11 +72,11 @@ function setUav(uav) {
 
     let reference_number_title_p = document.createElement('p');
     reference_number_title_p.className = "text-sm text-gray-500";
-    reference_number_title_p.innerHTML = "Учетный номер";
+    reference_number_title_p.textContent = "Учетный номер";
 
     let reference_number_value_p = document.createElement('p');
     reference_number_value_p.className = "font-medium";
-    reference_number_value_p.innerHTML = uav.reference_number;
+    reference_number_value_p.textContent = uav.reference_number;
 
     reference_number_div.appendChild(reference_number_title_p);
     reference_number_div.appendChild(reference_number_value_p);
@@ -87,11 +87,11 @@ function setUav(uav) {
 
     let created_at_title_p = document.createElement('p');
     created_at_title_p.className = "text-sm text-gray-500";
-    created_at_title_p.innerHTML = "Дата добавления";
+    created_at_title_p.textContent = "Дата добавления";
 
     let created_at_value_p = document.createElement('p');
     created_at_value_p.className = "font-medium";
-    created_at_value_p.innerHTML = uav.created_at.toLocaleString('ru-RU');
+    created_at_value_p.textContent = uav.created_at.toLocaleString('ru-RU');
 
     created_at_div.appendChild(created_at_title_p);
     created_at_div.appendChild(created_at_value_p);

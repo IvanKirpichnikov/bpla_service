@@ -5,19 +5,19 @@ function setUav(uav) {
     let noiseCharacteristics = document.getElementById('noise_characteristics');
     let reference_number = document.getElementById('reference_number');
 
-    model.innerHTML = uav.model;
+    model.textContent = uav.model;
     model.className = model.className.replace(' animate-pulse', '');
 
-    serialNumber.innerHTML = uav.serial_number;
+    serialNumber.textContent = uav.serial_number;
     serialNumber.className = serialNumber.className.replace(' animate-pulse', '');
 
-    createdAt.innerHTML = (new Date(uav.created_at)).toLocaleString('ru-RU', date_time_options);
+    createdAt.textContent = (new Date(uav.created_at)).toLocaleString('ru-RU', date_time_options);
     createdAt.className = createdAt.className.replace(' animate-pulse', '');
 
-    noiseCharacteristics.innerHTML = uav.noise_characteristics;
+    noiseCharacteristics.textContent = uav.noise_characteristics;
     noiseCharacteristics.className = noiseCharacteristics.className.replace(' animate-pulse', '');
 
-    reference_number.innerHTML = uav.reference_number;
+    reference_number.textContent = uav.reference_number;
     reference_number.className = reference_number.className.replace(' animate-pulse', '');
 }
 

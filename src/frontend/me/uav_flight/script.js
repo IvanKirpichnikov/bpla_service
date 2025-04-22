@@ -6,27 +6,27 @@ function set_uav_flight(uav_flight) {
     let end_at_div = document.getElementById('end_at');
     let created_at_div = document.getElementById('created_at');
 
-    location_div.innerHTML = uav_flight.location;
+    location_div.textContent = uav_flight.location;
     location_div.className = location_div.className.replace(' animate-pulse', '');
 
     fetch(
         `/api/uav/${uav_flight.uav_id}`,
         { method: 'GET' },
     ).then(
-        response => response.json().then(uav => uav_model_div.innerHTML = uav.model)
+        response => response.json().then(uav => uav_model_div.textContent = uav.model)
     )
     uav_model_div.className = uav_model_div.className.replace(' animate-pulse', '');
 
-    status_div.innerHTML = status_map.get(uav_flight.status);
+    status_div.textContent = status_map.get(uav_flight.status);
     status_div.className = status_div.className.replace(' animate-pulse', '');
 
-    start_at_div.innerHTML = (new Date(uav_flight.start_at)).toLocaleString('ru-RU', date_time_options);
+    start_at_div.textContent = (new Date(uav_flight.start_at)).toLocaleString('ru-RU', date_time_options);
     start_at_div.className = start_at_div.className.replace(' animate-pulse', '');
 
-    end_at_div.innerHTML = ( new Date(uav_flight.end_at)).toLocaleString('ru-RU', date_time_options);
+    end_at_div.textContent = ( new Date(uav_flight.end_at)).toLocaleString('ru-RU', date_time_options);
     end_at_div.className = end_at_div.className.replace(' animate-pulse', '');
 
-    created_at_div.innerHTML = ( new Date(uav_flight.start_at)).toLocaleString('ru-RU', date_time_options);
+    created_at_div.textContent = ( new Date(uav_flight.start_at)).toLocaleString('ru-RU', date_time_options);
     created_at_div.className = created_at_div.className.replace(' animate-pulse', '');
 }
 

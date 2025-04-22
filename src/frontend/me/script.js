@@ -18,13 +18,13 @@ function setMeData(me) {
     let email = document.getElementById('email');
     let createdAt = document.getElementById('created_at');
 
-    fio.innerHTML = me.fio;
+    fio.textContent = me.fio;
     fio.className = fio.className.replace(' animate-pulse', '');
 
-    email.innerHTML = me.email;
+    email.textContent = me.email;
     email.className = email.className.replace(' animate-pulse', '');
 
-    createdAt.innerHTML = me.created_at.toLocaleString('ru-RU', date_time_options);
+    createdAt.textContent = me.created_at.toLocaleString('ru-RU', date_time_options);
     createdAt.className = createdAt.className.replace(' animate-pulse', '');
 }
 
